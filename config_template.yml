@@ -1,0 +1,6 @@
+development:
+  password: 
+  theme_id: "79360360541"
+  store: https://vianneyincostore.myshopify.com
+  ignore_files:
+    - config/setings_data.json
