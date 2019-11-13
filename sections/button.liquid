@@ -1,0 +1,32 @@
+<div id="section-button">
+    <div class="container">
+        <a href="{{ section.settings.button }}" class="mybutton">{{ section.settings.textbutton }}</a>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Button",
+    "settings": [
+        {
+            "id": "button",
+            "type": "text",
+            "label": "Button",
+            "default": "Button"
+        },
+        {
+            "id": "textbutton",
+            "type": "text",
+            "label": "Button text",
+            "default": "Test button"
+        }
+    ]
+    ,
+    "presets": [
+        {
+            "name": "Button",
+            "category":"Button"
+        }
+    ]
+}
+{% endschema %}
