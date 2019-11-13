@@ -1,6 +1,15 @@
 <div id="section-button">
     <div class="containerButton">
-        <a href="{{ section.settings.button }}" class="mybutton" style="color: {{ section.settings.colortxt }}; background-color: {{ section.settings.colorbtn }};" >{{ section.settings.textbutton }}</a>
+        <a 
+            href="{{ section.settings.button }}" 
+            class="mybutton" 
+            style="
+            color: {{ section.settings.colortxt }}; 
+            background-color: {{ section.settings.colorbtn }};
+            font-size: {{ section.settings.taillebtn }}px;
+            " >
+            {{ section.settings.textbutton }}
+        </a>
     </div>
 </div>
 
@@ -31,6 +40,16 @@
             "type": "color",
             "label": "Couleur du bouton",
             "default": "#000000"
+        },
+        {
+            "id": "taillebtn",
+            "type": "range",
+            "min": 12,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Taille du bouton",
+            "default": 16
         }
     ]
     ,
